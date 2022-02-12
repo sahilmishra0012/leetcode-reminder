@@ -1,0 +1,12 @@
+[CREDENTIALS]
+UserName=sahilmishra0012
+Referer=https://leetcode.com/sahilmishra0012/
+
+[API]
+URL=https://leetcode.com/graphql/
+ContentType=application/json; charset=utf-8
+Query=query getUserProfile($username: String!) { matchedUser(username: $username) { submissionCalendar } } 
+
+[DATE]
+EpochPattern=%%Y-%%m-%%d %%H:%%M:%%S
+CurrentDatePattern=%%Y-%%m-%%d 05:30:00

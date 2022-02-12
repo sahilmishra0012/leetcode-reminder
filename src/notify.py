@@ -8,7 +8,7 @@ while(True):
     if(submission_count==0):
         notification.notify(
             title = "LeetCode Statistics on {}".format(datetime.date.today()),
-            message = "You have not made any submissions today! Go and Code!",
+            message = "You have not made any submissions today!",
             app_icon = "Paomedia-Small-N-Flat-Bell.ico",
             timeout  = 10)
     else:

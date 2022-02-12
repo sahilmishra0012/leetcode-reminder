@@ -1,1 +1,1 @@
-nohup python /home/samkiller007/leetcode/notify.py &
+python /home/samkiller007/leetcode/src/notify.py

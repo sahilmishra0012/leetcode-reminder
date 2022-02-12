@@ -1,0 +1,1 @@
+nohup python /home/samkiller007/leetcode/notify.py &

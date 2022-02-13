@@ -1,3 +1,4 @@
+# LeetCode Reminder
 <div align="center">
   <img src="res/images/leetcode-reminder-logo.png" width="40%" 
      height="40%">

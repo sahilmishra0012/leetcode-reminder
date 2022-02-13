@@ -10,3 +10,7 @@ Query=query getUserProfile($username: String!) { matchedUser(username: $username
 [DATE]
 EpochPattern=%%Y-%%m-%%d %%H:%%M:%%S
 CurrentDatePattern=%%Y-%%m-%%d 05:30:00
+
+[TIME]
+RemindInterval=60
+NotificationDuration=10

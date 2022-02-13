@@ -13,7 +13,7 @@ The current installation procedure has only been tested on `Manjaro Linux x86_64
 git clone https://github.com/sahilmishra0012/leetcode-reminder.git
 ```
 
-2. Edit the configuration file:
+2. Edit the configuration file. Edit your username and time configuration accordingly.
 
 ```
 cd leetcode-reminder/res/configs
@@ -25,7 +25,7 @@ vi config
 ```
 [CREDENTIALS]
 UserName=<Your-Username>
-Referer=https://leetcode.com/<Your-Username>/
+Referer=https://leetcode.com/
 
 [API]
 URL=https://leetcode.com/graphql/
@@ -35,6 +35,10 @@ Query=query getUserProfile($username: String!) { matchedUser(username: $username
 [DATE]
 EpochPattern=%%Y-%%m-%%d %%H:%%M:%%S
 CurrentDatePattern=%%Y-%%m-%%d 05:30:00
+
+[TIME]
+RemindInterval=60
+NotificationDuration=10
 ```
 
 3. Run the following command from root directory to  bundle a Python application and all its dependencies into a single package. 

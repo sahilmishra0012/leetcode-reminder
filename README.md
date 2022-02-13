@@ -1,4 +1,4 @@
-# leetcode-reminder-extension
+# LeetCode Reminder
 
 ```
 pyinstaller --onefile src/notify.py --hiddenimport=plyer.platforms.linux.notification

@@ -5,7 +5,7 @@ from get_time import get_time
 
 def get_current_submissions():
     config = load_config()
-    current_date = str(get_time(config))
+    current_date = str(get_time(config['currentdatepattern'], config['epochpattern']))
 
     data = {"query": config["query"], "variables":{"username":config["username"]}}
     headers = {"Content-Type": config["contenttype"], "referer" : config["referer"]}
@@ -16,6 +16,6 @@ def get_current_submissions():
     status = json.loads(status)
 
     if current_date in status.keys():
-        return status[current_date]
+        return status[current_date], int(config["remindinterval"]), int(config["notificationduration"])
     else:
-        return 0
+        return 0, int(config["remindinterval"]), int(config["notificationduration"])

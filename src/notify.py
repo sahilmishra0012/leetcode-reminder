@@ -4,25 +4,25 @@ import datetime
 import api
 
 while(True):
-    submission_count = api.get_current_submissions()
+    submission_count, remindinterval, notificationduration = api.get_current_submissions()
     if(submission_count==0):
         notification.notify(
             title = "LeetCode Statistics on {}".format(datetime.date.today()),
             message = "You have not made any submissions today!",
             app_icon = "../res/icons/bell-icon.ico",
-            timeout  = 10)
+            timeout  = notificationduration)
     else:
         if(submission_count==1):
             notification.notify(
                 title = "LeetCode Statistics on {}".format(datetime.date.today()),
                 message = "Yeyy!! You have made 1 submission today!",
                 app_icon = "../res/icons/bell-icon.ico",
-                timeout  = 10)
+                timeout  = notificationduration)
         else:
             notification.notify(
                 title = "LeetCode Statistics on {}".format(datetime.date.today()),
                 message = "Yeyy!! You have made {} submissions today!".format(submission_count),
                 app_icon = "../res/icons/bell-icon.ico",
-                timeout  = 10)
+                timeout  = notificationduration)
 
-    time.sleep(60)
+    time.sleep(remindinterval)

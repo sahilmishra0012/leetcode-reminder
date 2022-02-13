@@ -3,7 +3,7 @@ import configparser
 def load_config():
 
     parser = configparser.ConfigParser()    
-    parser.read('/home/samkiller007/leetcode/res/configs/config')
+    parser.read('/absolute/path/to/res/configs/config')
     
     config_json = {}
     for sect in parser.sections():

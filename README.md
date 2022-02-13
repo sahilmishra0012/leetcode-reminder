@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="res/images/leetcode-reminder-logo.png">
+  <img src="res/images/leetcode-reminder-logo.png" width="60%" 
+     height="60%">
 </div>
 
 ## Install

@@ -1,6 +1,6 @@
 # LeetCode Reminder
 
-!! Use codebase from dev branch only. Main branch is undergoing maintenance.
+exclamation Use codebase from dev branch only. Main branch is undergoing maintenance.
 
 <div align="center">
   <img src="res/images/leetcode-reminder-logo.png" width="40%" 

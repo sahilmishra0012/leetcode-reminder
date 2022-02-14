@@ -1,14 +1,6 @@
 # LeetCode Reminder
 
-<div class="panel panel-warning">
-**Warning**
-{: .panel-heading}
-<div class="panel-body">
-
 Use codebase from dev branch only. Main branch is undergoing maintenance.
-
-</div>
-</div>
 
 <div align="center">
   <img src="res/images/leetcode-reminder-logo.png" width="40%" 

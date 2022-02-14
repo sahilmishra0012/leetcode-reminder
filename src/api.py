@@ -18,6 +18,6 @@ def get_current_submissions():
     status = json.loads(status)
 
     if current_date in status.keys():
-        return status[current_date], int(config["remindinterval"]), int(config["notificationduration"])
+        return status[current_date]
     else:
-        return 0, int(config["remindinterval"]), int(config["notificationduration"])
+        return 0
